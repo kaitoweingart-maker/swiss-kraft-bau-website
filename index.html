@@ -71,8 +71,12 @@
       "Innenausbau",
       "Generalunternehmer",
       "Ladenbau",
+      "Küchenbau",
+      "Rückbau",
+      "Umbau & Sanierung",
       "Projekt-Management",
-      "Bauleitung"
+      "Bauleitung",
+      "Cross-Border Bau"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -106,17 +110,10 @@
 
   <!-- ====== Navigation ====== -->
   <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
-    <a href="#" class="nav-logo" aria-label="Swiss Kraft Bau — Startseite">
-      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <rect width="32" height="32" rx="4" class="logo-dark" fill="#FFFFFF"/>
-        <path d="M8 24V12l8-5 8 5v12" stroke="#C87A1A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="logo-accent"/>
-        <path d="M13 24v-6h6v6" stroke="#C87A1A" stroke-width="2" fill="none"/>
-      </svg>
-      Swiss Kraft Bau
-    </a>
+    <a href="#" class="nav-logo" aria-label="Swiss Kraft Bau — Startseite">Swiss Kraft Bau</a>
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#dienstleistungen">Leistungen</a></li>
-      <li><a href="#referenzen">Referenzen</a></li>
+      <li><a href="#werte">Werte</a></li>
       <li><a href="#ueber-uns">Über uns</a></li>
       <li><a href="#partner">Partner</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
@@ -134,20 +131,12 @@
 
     <!-- ====== Hero ====== -->
     <section class="hero" id="hero" aria-label="Einführung">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="images/hero-bg.jpg" alt="" width="1920" height="1280" fetchpriority="high" decoding="async">
+      </div>
       <div class="hero-content" data-animate>
-        <p class="hero-label">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
-          Swiss Kraft Bau GmbH
-        </p>
         <h1>Qualität im Bau.<br><span class="accent">Kraft in der Umsetzung.</span></h1>
-        <p class="hero-sub">Ihr Generalunternehmer für anspruchsvollen Innenausbau, Ladenbau und schlüsselfertige Bauprojekte in der Schweiz und im deutschsprachigen Raum.</p>
-        <div class="hero-services" role="list" aria-label="Unsere Kernleistungen">
-          <span class="hero-tag" role="listitem">Innenausbau</span>
-          <span class="hero-tag" role="listitem">GU-Leistungen</span>
-          <span class="hero-tag" role="listitem">Ladenbau</span>
-          <span class="hero-tag" role="listitem">Projekt-Management</span>
-          <span class="hero-tag" role="listitem">Bauleitung</span>
-        </div>
+        <p class="hero-sub">Ihr Allround-Baupartner für Innenausbau, Ladenbau, Küchenbau, Rückbau und schlüsselfertige Projekte — grenzüberschreitend in der Schweiz, Deutschland und Österreich.</p>
         <div class="hero-cta">
           <a href="#kontakt" class="btn btn-accent btn-lg">Projekt anfragen</a>
           <a href="#dienstleistungen" class="btn btn-outline-light btn-lg">Unsere Leistungen</a>
@@ -174,7 +163,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 9v12"/></svg>
             </div>
             <h3>Innenausbau</h3>
-            <p>Kompletter Innenausbau von Gewerbe- und Wohnflächen — vom Rohbau bis zum bezugsfertigen Objekt. Trockenbau, Boden, Decken, Malerarbeiten und Installationen nach höchsten Qualitätsstandards.</p>
+            <p>Kompletter Innenausbau von Gewerbe- und Wohnflächen — vom Rohbau bis zum bezugsfertigen Objekt. Trockenbau, Böden, Decken, Malerarbeiten und Installationen nach höchsten Standards.</p>
           </article>
 
           <!-- GU Leistungen -->
@@ -183,7 +172,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><rect x="9" y="14" width="6" height="7"/><path d="M9 10h2M13 10h2"/></svg>
             </div>
             <h3>GU-Leistungen</h3>
-            <p>Als Generalunternehmer übernehmen wir die Gesamtverantwortung für Ihr Bauprojekt. Von der Ausführungsplanung über die Vergabe bis zur termingerechten und budgetsicheren Schlüsselübergabe.</p>
+            <p>Als Generalunternehmer übernehmen wir die Gesamtverantwortung — von der Ausführungsplanung über die Vergabe bis zur termingerechten und budgetsicheren Schlüsselübergabe.</p>
           </article>
 
           <!-- Ladenbau -->
@@ -192,159 +181,127 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l1 4H3l1-4z"/><path d="M5 11v10h14V11"/><rect x="9" y="14" width="6" height="7"/></svg>
             </div>
             <h3>Ladenbau</h3>
-            <p>Massgeschneiderter Laden- und Shopausbau für den Einzelhandel, Gastronomie und Dienstleister. Konzeptentwicklung, Materialauswahl und fachgerechte Umsetzung, die Ihre Marke optimal in Szene setzt.</p>
+            <p>Massgeschneiderter Laden- und Shopausbau für Einzelhandel, Gastronomie und Dienstleister. Von der Konzeptentwicklung bis zur schlüsselfertigen Übergabe.</p>
           </article>
 
-          <!-- Projekt-Management -->
+          <!-- Küchenbau -->
           <article class="service-card" data-animate data-animate-delay="4">
             <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M9 6h6M9 10h6M9 14h4"/><path d="M9 1v2M15 1v2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2"/><path d="M2 13h20"/><circle cx="7" cy="10" r="1"/><circle cx="12" cy="10" r="1"/></svg>
             </div>
-            <h3>Projekt-Management</h3>
-            <p>Professionelle Steuerung und Überwachung aller Projektphasen. Kosten-, Termin- und Qualitätskontrolle, Nachtragsmanagement und strukturiertes Reporting für volle Transparenz.</p>
+            <h3>Küchenbau</h3>
+            <p>Planung und Einbau von Küchen für Hotellerie, Gastronomie und Wohnbau. Funktionale Layouts, hochwertige Materialien und fachgerechte Installation aller Anschlüsse.</p>
           </article>
 
-          <!-- Bauleitung & Handwerk -->
+          <!-- Rückbau -->
           <article class="service-card" data-animate data-animate-delay="5">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/><path d="M10 11v6M14 11v6"/></svg>
+            </div>
+            <h3>Rückbau</h3>
+            <p>Professioneller Teil- und Komplettrückbau. Fachgerechte Entsorgung, Schadstoffsanierung und Vorbereitung für Neubau oder Umnutzung — sicher, sauber und normkonform.</p>
+          </article>
+
+          <!-- Bauleitung -->
+          <article class="service-card" data-animate data-animate-delay="1">
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"/><path d="M5 18a7 7 0 0114 0"/><path d="M12 5v5M9 7l1 1.5M15 7l-1 1.5"/></svg>
             </div>
             <h3>Bauleitung &amp; Handwerk</h3>
-            <p>Fachgerechte Bauausführung, Koordination aller Gewerke und konsequente Qualitätssicherung auf der Baustelle. Arbeitssicherheit, Normenkonformität und saubere Dokumentation.</p>
+            <p>Fachgerechte Bauausführung, Koordination aller Gewerke und konsequente Qualitätssicherung. Arbeitssicherheit, Normenkonformität und saubere Dokumentation.</p>
+          </article>
+
+          <!-- Projekt-Management -->
+          <article class="service-card" data-animate data-animate-delay="2">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M9 6h6M9 10h6M9 14h4"/><path d="M9 1v2M15 1v2"/></svg>
+            </div>
+            <h3>Projekt-Management</h3>
+            <p>Steuerung und Überwachung aller Projektphasen. Kosten-, Termin- und Qualitätskontrolle, Nachtragsmanagement und strukturiertes Reporting für volle Transparenz.</p>
+          </article>
+
+          <!-- Umbau & Sanierung -->
+          <article class="service-card" data-animate data-animate-delay="3">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.8-3.8a3 3 0 00-4.2-4.2L14.7 3"/><path d="M12 8L4 16v4h4l8-8"/></svg>
+            </div>
+            <h3>Umbau &amp; Sanierung</h3>
+            <p>Umfassende Sanierungs- und Revitalisierungsprojekte. Substanzerhalt, energetische Modernisierung und Neugestaltung von Bestandsimmobilien mit Respekt für die Bausubstanz.</p>
+          </article>
+
+          <!-- Cross-Border -->
+          <article class="service-card" data-animate data-animate-delay="4">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <h3>Cross-Border Bau</h3>
+            <p>Grenzüberschreitende Bauprojekte in der Schweiz, Deutschland und Österreich. Wir kennen die lokalen Normen, Bewilligungsverfahren und arbeiten mit Partnern im gesamten DACH-Raum.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ====== Referenzen ====== -->
-    <section class="section section-alt" id="referenzen" aria-label="Unsere Referenzprojekte">
+    <!-- ====== Unsere Werte ====== -->
+    <section class="section section-alt" id="werte" aria-label="Unsere Werte">
       <div class="container">
         <header class="section-header" data-animate>
-          <p class="section-label">Projektportfolio</p>
-          <h2 class="section-title">Referenzen</h2>
-          <p class="section-subtitle">Ausgewählte Projekte, die für unsere Kompetenz und Leistungsfähigkeit stehen.</p>
+          <p class="section-label">Wofür wir stehen</p>
+          <h2 class="section-title">Korrekte Bauwerte. Seit über 15 Jahren.</h2>
+          <p class="section-subtitle">Unsere Arbeit basiert auf klaren Grundsätzen — sie sind das Fundament jedes Projekts, das wir realisieren.</p>
         </header>
 
-        <div class="references-grid">
-          <!-- 1. Gate Neun -->
-          <article class="reference-card" data-animate data-animate-delay="1">
-            <div class="reference-img">
-              <span class="reference-badge">Büro &amp; Gewerbe</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V5a1 1 0 011-1h4a1 1 0 011 1v16M13 21V9a1 1 0 011-1h4a1 1 0 011 1v12"/><path d="M7 8h2M7 12h2M7 16h2M15 12h2M15 16h2"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>Gate Neun</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Köln-Bonn
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">~18.500 m²</span>
-                <span class="reference-tag">Neubau</span>
-              </div>
-              <p class="reference-volume">~€11 Mio.</p>
-            </div>
-          </article>
+        <div class="werte-grid">
+          <!-- Bild links -->
+          <div class="werte-image" data-animate>
+            <img src="images/construction-1.jpg" alt="Professionelle Bauausführung auf einer Grossbaustelle" width="800" height="533" loading="lazy" decoding="async">
+          </div>
 
-          <!-- 2. BusinessPark Echterdingen -->
-          <article class="reference-card" data-animate data-animate-delay="2">
-            <div class="reference-img">
-              <span class="reference-badge">Büro &amp; Gewerbe</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="1"/><path d="M4 9h16M4 14h16M9 4v17M14 4v17"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>BusinessPark Echterdingen</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Echterdingen
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">~15.550 m²</span>
-                <span class="reference-tag">Neubau</span>
+          <!-- Werte rechts -->
+          <div class="werte-content" data-animate data-animate-delay="2">
+            <div class="wert-item">
+              <div class="wert-number">01</div>
+              <div>
+                <h3>Transparenz</h3>
+                <p>Offene Kommunikation, nachvollziehbare Kostenstrukturen und lückenlose Dokumentation. Unsere Auftraggeber wissen jederzeit, wo ihr Projekt steht — keine versteckten Kosten, keine Überraschungen.</p>
               </div>
-              <p class="reference-volume">~€11 Mio.</p>
             </div>
-          </article>
+            <div class="wert-item">
+              <div class="wert-number">02</div>
+              <div>
+                <h3>Qualität</h3>
+                <p>Kompromisslose Ausführungsqualität in jedem Detail. Wir arbeiten nach anerkannten Normen und Standards und setzen auf hochwertige Materialien und erfahrene Fachkräfte — vom ersten Handgriff bis zur Abnahme.</p>
+              </div>
+            </div>
+            <div class="wert-item">
+              <div class="wert-number">03</div>
+              <div>
+                <h3>Schnelle Umsetzung</h3>
+                <p>Effiziente Prozesse und erprobte Abläufe sorgen für schnelle, termingerechte Umsetzung. Wir halten Zeitpläne ein und reagieren flexibel auf Veränderungen — ohne Kompromisse bei der Qualität.</p>
+              </div>
+            </div>
+            <div class="wert-item">
+              <div class="wert-number">04</div>
+              <div>
+                <h3>Korrektes Arbeiten</h3>
+                <p>Zuverlässigkeit, Integrität und Handschlagqualität. Wir arbeiten sauber, halten Abmachungen ein und stehen zu unserem Wort. Das ist die Basis für langfristige Geschäftsbeziehungen und Vertrauen.</p>
+              </div>
+            </div>
+            <div class="wert-item">
+              <div class="wert-number">05</div>
+              <div>
+                <h3>Cross-Border Kompetenz</h3>
+                <p>Grenzüberschreitende Bauprojekte im gesamten DACH-Raum. Wir kennen die lokalen Bauvorschriften, Normen und Bewilligungsverfahren in der Schweiz, Deutschland und Österreich und koordinieren Partner vor Ort.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <!-- 3. Tübinger Carré -->
-          <article class="reference-card" data-animate data-animate-delay="3">
-            <div class="reference-img">
-              <span class="reference-badge">Wohnen &amp; Gewerbe</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><rect x="9" y="13" width="6" height="8"/><path d="M9 9h2M13 9h2"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>Tübinger Carré</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Stuttgart
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">~17.330 m²</span>
-                <span class="reference-tag">Neubau</span>
-              </div>
-              <p class="reference-volume">~€17 Mio.</p>
-            </div>
-          </article>
-
-          <!-- 4. Hotel Frankfurt -->
-          <article class="reference-card" data-animate data-animate-delay="1">
-            <div class="reference-img">
-              <span class="reference-badge">Hotelbau</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M6 21V5a1 1 0 011-1h10a1 1 0 011 1v16"/><path d="M10 21v-4h4v4"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M9 16h2M13 16h2"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>Hotel Frankfurt</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Frankfurt am Main
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">102 Zimmer</span>
-                <span class="reference-tag">Neubau</span>
-              </div>
-              <p class="reference-volume">~€18,5 Mio.</p>
-            </div>
-          </article>
-
-          <!-- 5. Sanierung Stuttgart -->
-          <article class="reference-card" data-animate data-animate-delay="2">
-            <div class="reference-img">
-              <span class="reference-badge">Wohnen</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M10 9h4M10 13h4"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>Sanierung Stuttgart</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Stuttgart
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">57 Wohneinheiten</span>
-                <span class="reference-tag">Sanierung</span>
-              </div>
-              <p class="reference-volume">~€29,6 Mio.</p>
-            </div>
-          </article>
-
-          <!-- 6. Revitalisierung Stuttgart -->
-          <article class="reference-card" data-animate data-animate-delay="3">
-            <div class="reference-img">
-              <span class="reference-badge">Büro</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.8-3.8a3 3 0 00-4.2-4.2L14.7 3"/><path d="M12 8L4 16v4h4l8-8"/></svg>
-            </div>
-            <div class="reference-content">
-              <h3>Revitalisierung Stuttgart</h3>
-              <p class="reference-location">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Stuttgart
-              </p>
-              <div class="reference-details">
-                <span class="reference-tag">~4.700 m²</span>
-                <span class="reference-tag">Revitalisierung</span>
-              </div>
-              <p class="reference-volume">~€960.000</p>
-            </div>
-          </article>
+        <!-- Zweites Bild -->
+        <div class="werte-banner" data-animate>
+          <img src="images/construction-2.jpg" alt="Architektur und Bauplanung" width="800" height="533" loading="lazy" decoding="async">
+          <div class="werte-banner-overlay">
+            <p class="werte-banner-text">Über 15 Jahre Erfahrung in Bau und Projektentwicklung<br><strong>Schweiz &middot; Deutschland &middot; Österreich</strong></p>
+          </div>
         </div>
       </div>
     </section>
@@ -355,7 +312,7 @@
         <header class="section-header" data-animate>
           <p class="section-label">Unser Unternehmen</p>
           <h2 class="section-title">Über uns</h2>
-          <p class="section-subtitle">Erfahrung, Fachkompetenz und Leidenschaft für professionellen Bau.</p>
+          <p class="section-subtitle">Über 15 Jahre Erfahrung, grenzüberschreitende Kompetenz und Leidenschaft für professionellen Bau.</p>
         </header>
 
         <div class="about-grid">
@@ -400,7 +357,7 @@
             <h3>Stefan Kraft</h3>
             <p class="person-role">Geschäftsführender Gesellschafter</p>
             <p>Stefan Kraft verfügt über mehr als 15 Jahre Erfahrung in der Bau- und Immobilienbranche. Mit fundiertem Hintergrund in Projektentwicklung, Bauleitung und Generalunternehmertätigkeit hat er Bauprojekte mit einem Gesamtvolumen von über 80 Millionen Euro erfolgreich realisiert.</p>
-            <p style="margin-top:.75rem">Seine Expertise umfasst Büro- und Gewerbebauten, Wohnungsbau, Hotelbau sowie umfassende Sanierungs- und Revitalisierungsprojekte im gesamten deutschsprachigen Raum — stets mit dem Anspruch an höchste Ausführungsqualität und wirtschaftliche Effizienz.</p>
+            <p style="margin-top:.75rem">Seine Expertise umfasst Büro- und Gewerbebauten, Wohnungsbau, Hotelbau sowie umfassende Sanierungs- und Revitalisierungsprojekte im gesamten DACH-Raum — grenzüberschreitend, korrekt und mit dem Anspruch an höchste Ausführungsqualität.</p>
           </div>
         </div>
 
@@ -433,32 +390,32 @@
 
         <div class="partners-grid">
           <article class="partner-card" data-animate data-animate-delay="1">
-            <div class="partner-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M6 21V5a1 1 0 011-1h10a1 1 0 011 1v16"/><path d="M10 21v-4h4v4"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2"/></svg>
+            <div class="partner-logo">
+              <img src="images/parkinn.jpg" alt="Prize by Radisson Logo" width="400" height="225" loading="lazy" decoding="async">
             </div>
-            <h4>Park Inn by Radisson</h4>
+            <h4>Prize by Radisson</h4>
             <p>Affoltern am Albis</p>
           </article>
 
           <article class="partner-card" data-animate data-animate-delay="2">
-            <div class="partner-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            <div class="partner-logo">
+              <img src="images/logo-chalet-swiss.png" alt="Chalet Swiss Hotel Logo" width="400" height="267" loading="lazy" decoding="async">
             </div>
-            <h4>Chalet Swiss</h4>
+            <h4>Chalet Swiss Hotel</h4>
             <p>Interlaken</p>
           </article>
 
           <article class="partner-card" data-animate data-animate-delay="3">
-            <div class="partner-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="17" rx="1"/><path d="M4 9h16M9 4v17"/></svg>
+            <div class="partner-logo">
+              <img src="images/logo-amanthos.png" alt="Amanthos Living Logo" width="400" height="200" loading="lazy" decoding="async">
             </div>
-            <h4>Amanthos AG</h4>
+            <h4>Amanthos Living</h4>
             <p>Serviced Apartments &amp; Hospitality</p>
           </article>
 
           <article class="partner-card" data-animate data-animate-delay="4">
-            <div class="partner-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M6 21V8l6-5 6 5v13"/><path d="M10 21v-4h4v4"/><circle cx="12" cy="12" r="2"/></svg>
+            <div class="partner-logo">
+              <img src="images/logo-mulin.png" alt="Hotel Mulin by Amanthos Logo" width="400" height="267" loading="lazy" decoding="async">
             </div>
             <h4>Hotel Mulin by Amanthos</h4>
             <p>Boutique Hotel</p>
@@ -508,7 +465,7 @@
           </div>
 
           <div class="contact-cta" data-animate data-animate-delay="2">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--color-accent);margin-bottom:.75rem"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            <img src="images/construction-3.jpg" alt="Baustelle" width="800" height="533" loading="lazy" decoding="async" style="width:100%;height:160px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:1rem">
             <h3>Projekt anfragen</h3>
             <p>Beschreiben Sie uns Ihr Vorhaben — wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
             <a href="mailto:info@swisskraftbau.ch?subject=Projektanfrage%20%E2%80%93%20Swiss%20Kraft%20Bau" class="btn btn-accent btn-lg">
@@ -527,19 +484,12 @@
     <div class="container">
       <div class="footer-main">
         <div>
-          <div class="footer-brand">
-            <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="4" fill="rgba(255,255,255,.1)"/>
-              <path d="M8 24V12l8-5 8 5v12" stroke="#C87A1A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M13 24v-6h6v6" stroke="#C87A1A" stroke-width="2" fill="none"/>
-            </svg>
-            Swiss Kraft Bau
-          </div>
+          <div class="footer-brand">Swiss Kraft Bau</div>
           <p class="footer-desc">Professionelle Baudienstleistungen in der Schweiz und im deutschsprachigen Raum. Qualität im Bau. Kraft in der Umsetzung.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer Navigation">
           <a href="#dienstleistungen">Leistungen</a>
-          <a href="#referenzen">Referenzen</a>
+          <a href="#werte">Werte</a>
           <a href="#ueber-uns">Über uns</a>
           <a href="#partner">Partner</a>
           <a href="#kontakt">Kontakt</a>
