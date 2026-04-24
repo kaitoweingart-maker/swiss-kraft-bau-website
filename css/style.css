@@ -156,6 +156,30 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;line-height:1.2;colo
 .stat-number{font-family:var(--font-heading);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;color:var(--color-accent);line-height:1.1}
 .stat-label{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.25rem;letter-spacing:.03em}
 
+/* === Process / Arbeitsweise === */
+.process-grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
+.process-step{background:var(--color-surface);border-radius:var(--radius);padding:1.5rem;border:1px solid var(--color-border-light);position:relative}
+.process-number{font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:.5rem}
+.process-step h3{font-size:1.05rem;margin-bottom:.4rem}
+.process-step p{font-size:.9rem;color:var(--color-text-muted);line-height:1.65}
+
+/* === CTA Banner === */
+.cta-banner{position:relative;padding:4rem 0;overflow:hidden;text-align:center}
+.cta-banner-bg{position:absolute;inset:0}
+.cta-banner-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.35)}
+.cta-banner-content{position:relative;z-index:1}
+.cta-banner h2{font-family:var(--font-heading);font-size:clamp(1.4rem,3.5vw,2.2rem);color:#fff;margin-bottom:.75rem}
+.cta-banner p{color:rgba(255,255,255,.7);font-size:1rem;margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6}
+
+/* === Branchen === */
+.branchen-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.branche-card{background:var(--color-surface);border-radius:var(--radius);padding:1.5rem;border:1px solid var(--color-border-light);transition:all var(--duration) var(--ease)}
+.branche-card:hover{box-shadow:var(--shadow-md);border-color:var(--color-accent-light)}
+.branche-icon{width:40px;height:40px;background:var(--color-accent-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--color-accent);margin-bottom:.75rem}
+.branche-icon svg{width:20px;height:20px}
+.branche-card h3{font-size:1rem;margin-bottom:.35rem}
+.branche-card p{font-size:.85rem;color:var(--color-text-muted);line-height:1.6}
+
 /* === Werte === */
 .werte-grid{display:grid;grid-template-columns:1fr;gap:2rem}
 .werte-image{border-radius:var(--radius);overflow:hidden}
@@ -230,6 +254,9 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;line-height:1.2;colo
   .reference-img{height:180px}
   .about-grid{grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
   .stats-bar{grid-template-columns:repeat(3,1fr);gap:2rem;padding:2.5rem 2rem}
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:1.25rem}
+  .branchen-grid{grid-template-columns:repeat(2,1fr);gap:1.25rem}
+  .cta-banner{padding:5rem 0}
   .werte-grid{grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
   .werte-image img{height:100%;min-height:400px}
   .werte-banner img{height:240px}
@@ -259,6 +286,9 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:700;line-height:1.2;colo
   .services-grid{grid-template-columns:repeat(3,1fr);gap:1.5rem}
   .references-grid{grid-template-columns:repeat(3,1fr);gap:1.5rem}
   .about-grid{gap:3rem}
+  .process-grid{grid-template-columns:repeat(4,1fr)}
+  .branchen-grid{grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .cta-banner{padding:6rem 0}
   .werte-grid{gap:3rem}
   .werte-image img{min-height:480px}
   .werte-banner img{height:280px}
