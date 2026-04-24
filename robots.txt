@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaitoweingart-maker.github.io/swiss-kraft-bau-website/sitemap.xml
